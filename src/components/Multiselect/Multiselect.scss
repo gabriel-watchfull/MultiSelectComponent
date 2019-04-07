@@ -1,0 +1,74 @@
+$primary-color: #41B883;
+$border-color: #e8e8e8;
+
+.multiselect {
+  &__input {
+  	width: 100%;
+    min-height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+  }
+
+  &__tags {
+  	display: flex;
+  	list-style-type: none;
+  	margin: 0;
+  	padding:0;
+  	text-align: left;
+  	margin-bottom: 20px;
+  }
+
+  &__content-wrapper {
+  	list-style-type: none;
+  	margin: 0;
+  	padding:0;
+  	text-align: left;
+  	height:0;
+  	overflow: hidden;
+
+  	&.opened {
+  	  	border-right: 1px solid $border-color;
+	  	border-left: 1px solid $border-color;
+	  	border-bottom: 1px solid $border-color;
+  		height: auto;
+  	}
+  }
+
+  &__element {
+	min-height: 40px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    &:hover {
+    	background: $primary-color;
+    	color: white;
+    	cursor: pointer;
+    }
+  }
+
+   &__checkbox {
+  	display:none;
+  }
+
+  &__tag {
+  	background: $primary-color;
+  	color: white;
+  	padding: 2px 8px;
+  	border-radius: 5px;
+  	margin-right: 10px;
+  }
+
+  &__destroyTag {
+  	background: transparent;
+  	border: none;
+  	color: grey;
+
+  	&:hover {
+  		color:white;
+  		cursor: pointer;
+  	}
+  }
+}

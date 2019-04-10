@@ -1,4 +1,4 @@
-Multiselect Component
+Multiselect Component (just for fun)
 
 npm run serve
 npm run test:unit
